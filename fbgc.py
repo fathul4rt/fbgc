@@ -34,7 +34,7 @@ def login(mail,pw):
 		exit()
 
 def ceksing(id):
-	print(f'{lg}get {id} info..')
+	print(f'{lg}get {id} info')
 	s.cookies = cj('kuki.txt')
 	s.cookies.load()
 	r = s.get('https://mbasic.facebook.com/'+id).text
